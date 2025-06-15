@@ -27,7 +27,7 @@ export const Navbar=({handleSearch})=>{
  
 
   alert("Logged out successfully");
-  navigate('/user/login'); 
+  navigate('/user-login'); 
 };
 
 
