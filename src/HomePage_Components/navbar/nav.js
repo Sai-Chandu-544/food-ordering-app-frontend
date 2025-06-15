@@ -52,7 +52,7 @@ export const Navbar=({handleSearch})=>{
                     (
                     <>
                     <li><NavLink to="/user/register">Register</NavLink> </li>
-                    <li><NavLink to="/user/login">Login</NavLink></li> 
+                    <li><NavLink to="/user-login">Login</NavLink></li> 
                     </>
                     )
                     }
