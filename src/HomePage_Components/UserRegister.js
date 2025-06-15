@@ -62,7 +62,7 @@ export const UserRegister=({handleStore})=>{
       handleStore(name)
       
 
-        navigate("/user/login");
+        navigate("/user-login");
       console.log("Success:", data);
      
       
