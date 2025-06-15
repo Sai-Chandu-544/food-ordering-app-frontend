@@ -8,7 +8,7 @@ import {Navbar} from './HomePage_Components/navbar/nav'
 import { useLocation } from 'react-router-dom';
 import {UserMenu,Veg,NonVeg,UserItem}from './HomePage_Components/userFetching';
 import {useState} from 'react'
-// import { Page404 } from './HomePage_Components/Page404';
+import { Page404 } from './HomePage_Components/Page404';
 import {Details} from './HomePage_Components/details';
 import {PrivateRoute } from './HomePage_Components/privateRoutes'
 import {UserOrders} from './HomePage_Components/orders'
@@ -73,7 +73,7 @@ return (
 
           {/* Protected Routes */}
           <Route path="/user/cart" element={<PrivateRoute><Cart /></PrivateRoute>} />
-          <Route path="/user-login" element={<UserLogin />} />
+          <Route path="/user/login" element={<UserLogin />} />
           <Route path="/user/register" element={<UserRegister handleStore={handleStore} />} />
           <Route path="/user/menu" element={<PrivateRoute><UserMenu /></PrivateRoute>} />
           <Route path="/user/menu/Veg" element={<PrivateRoute><Veg /></PrivateRoute>} />
@@ -83,7 +83,7 @@ return (
           
        
 
-          {/* <Route path="*" element={<Page404 />} /> */}
+           <Route path="*" element={<Page404 />} /> 
         </Routes>
       )}
     </>
